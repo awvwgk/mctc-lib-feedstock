@@ -35,7 +35,7 @@ outputs:
         - pkg-config
         - llvm-openmp  # [osx]
       host:
-        - libgomp  # [linux]
+        - libgomp  # [not osx]
         - llvm-openmp  # [osx]
         - jonquil-devel * {{ module_abi }}_*
         - toml-f-devel * {{ module_abi }}_*
